@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+:root {
+  /* SiteClone Pro - Soothing Comfortable Sky-Blue Glass Palette */
+  --bg-primary: #edfaff;        /* Relaxing sky-50 white base */
+  --bg-secondary: #e0f2fe;      /* Comfortable sky-100 tint */
+  --bg-card: rgba(255, 255, 255, 0.75); /* Highly readable, pristine white frosted glass card */
+  --bg-tertiary: rgba(186, 230, 253, 0.45); /* Soft sky-200 glass accent */
+  --accent: #0284c7;           /* Sky-600 premium action blue */
+  --accent-hover: #0369a1;     /* Sky-700 hover state */
+  --success: #10b981;          /* Active green status */
+  --warning: #f59e0b;          /* Bright warm warning */
+  --danger: #ef4444;           /* Coral red danger */
+  --info: #06b6d4;             /* Fresh cyan helper */
+  --text-primary: #0f172a;     /* Deep slate-900 for premium text readability */
+  --text-secondary: #334155;   /* Crisp slate-700 secondary labels */
+  --text-muted: #64748b;       /* slate-500 helper notes */
+  --border: rgba(14, 165, 233, 0.16); /* Sky-500 translucent borders */
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  direction: rtl;
+  text-align: right;
+  overflow-x: hidden;
+}
+
+/* Mesh Background Gradient for Frosted Glass Depth in Sky Blue */
+.mesh-bg {
+  background-color: #edfaff;
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(199, 100%, 88%, 0.95) 0px, transparent 50%), 
+    radial-gradient(at 100% 100%, hsla(187, 100%, 85%, 0.85) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, hsla(207, 100%, 92%, 0.75) 0px, transparent 60%);
+  background-attachment: fixed;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(2, 132, 199, 0.15);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Glassmorphism Classes with Backdrop Blur & Border Glows in Lucid-Light Theme */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(2, 132, 199, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(14, 165, 233, 0.08);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.68);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(2, 132, 199, 0.12);
+  box-shadow: 0 4px 20px 0 rgba(14, 165, 233, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(2, 132, 199, 0.3);
+  box-shadow: 0 10px 25px 0 rgba(2, 132, 199, 0.12);
+}
+
+/* Interactive Animations */
+.glow-on-hover:hover {
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+}
