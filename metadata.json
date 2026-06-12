@@ -1,0 +1,6 @@
+{
+  "name": "SiteClone Pro v20",
+  "description": "تطبيق متكامل لاستنساخ وإدارة ومراقبة المواقع الإلكترونية مع حماية مفاتيح API وإدارة البريد الإلكتروني وأتمتة العمليات ومساعد ذكي.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
